@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="set.FXMLDocumentController">
+    <children>
+      <Label layoutX="83.0" layoutY="7.0" prefHeight="79.0" prefWidth="287.0" text="         Set Operation" textFill="#d01b1b" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="62.0" layoutY="86.0" style="-fx-line-spacing: 10;" text="add universe :" AnchorPane.bottomAnchor="401.0" AnchorPane.topAnchor="86.0">
+         <padding>
+            <Insets bottom="5.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="50.0" />
+         </opaqueInsets></Label>
+      <Label layoutX="61.0" layoutY="137.0" text="add set :" />
+      <TextField fx:id="universeInput" layoutX="62.0" layoutY="103.0" prefHeight="25.0" prefWidth="287.0" />
+      <TextField fx:id="setInput" layoutX="62.0" layoutY="154.0" prefHeight="25.0" prefWidth="287.0" />
+      <Button fx:id="addUniverse" layoutX="370.0" layoutY="103.0" mnemonicParsing="false" onAction="#addUniverse" text="add" />
+      <Button fx:id="addSet" layoutX="370.0" layoutY="154.0" mnemonicParsing="false" onAction="#addSet" text="add" />
+      <ListView fx:id="setView" layoutX="61.0" layoutY="195.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="325.0" layoutY="213.0" text="Set One " />
+      <ComboBox fx:id="setOne" layoutX="273.0" layoutY="236.0" onAction="#selectSetOne" prefWidth="150.0" />
+      <Label layoutX="326.0" layoutY="269.0" text="Set Two " />
+      <ComboBox fx:id="setTwo" layoutX="274.0" layoutY="286.0" onAction="#selectSetTwo" prefWidth="150.0" />
+      <Label layoutX="305.0" layoutY="327.0" text="select operation" />
+      <ComboBox fx:id="operation" layoutX="274.0" layoutY="344.0" onAction="#selectOperation" prefWidth="150.0" />
+      <TextField fx:id="result" editable="false" layoutX="62.0" layoutY="427.0" prefHeight="65.0" prefWidth="358.0" />
+      <Label layoutX="61.0" layoutY="410.0" text="Result" />
+    </children>
+</AnchorPane>
